@@ -1,0 +1,14 @@
+{% extends 'base.login.html.twig' %}
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+
+{% block body %}
+	<div class="row" style="margin-top:100px">
+		<div class="col"></div>
+		<div class="col">
+			{% if error %}
+				<div class="text-danger">{{ error.messageKey|trans }}</div>
+			{% endif %}
+			{{ form(form) }}
+			</div>
+			<div class="col"></div>
+		{% endblock %}

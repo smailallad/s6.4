@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+{% block title %}Nouveau Utilisateur
+{% endblock %}
+
+{% block body %}
+	<h1>Nouveau Utilisateur</h1>
+
+	{{ include('user/_form.html.twig') }}
+	<hr/>
+	<a href="{{ path('app_user_index') }}" class="btn btn-primary">Liste</a>
+{% endblock %}
